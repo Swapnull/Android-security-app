@@ -3,7 +3,7 @@
 * [Kevin Charles](https://github.com/kevinchar93)
 * Brandon Murdoch
 * Henry Rowland
-* Martyn Rushton (me)
+* [Martyn Rushton](https://github.com/martynrushton)
 
 ##Overview
 This is a camera application written using the Android SDK. We built it to meet a specification given to us by a 'client' for a university project.
