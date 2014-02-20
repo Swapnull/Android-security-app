@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opsecurity"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/start_selector"
+        android:enabled="true"
+        android:text="@string/button_start"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:visibility="visible"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stop_selector"
+        android:enabled="false"
+        android:onClick="stopSecurity"
+        android:text="@string/button_stop"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:visibility="visible" 
+        android:clickable="true"/>
+
+   	<FrameLayout 
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

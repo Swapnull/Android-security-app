@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gsdp.opsecurity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.RECIEVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="9" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="com.gsdp.opsecurity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gsdp.opsecurity.UserSettings"
+            android:label="@string/title_activity_user_settings"
+            android:parentActivityName="com.gsdp.opsecurity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gsdp.opsecurity.MainActivity" />
+        </activity>
+        <activity android:name="com.buzzbox.mob.android.scheduler.ui.SchedulerPreferenceActivity" />
+        <activity android:name="com.buzzbox.mob.android.scheduler.ui.SchedulerLogActivity" />
+        <activity android:name="com.buzzbox.mob.android.scheduler.ui.NotificationHistoryActivity" />
+
+        <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService" >
+        </service>
+
+        <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.gsdp.opsecurity.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:parentActivityName="com.gsdp.opsecurity.MainActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gsdp.opsecurity.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

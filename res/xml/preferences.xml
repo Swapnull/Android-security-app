@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/opsecurity">
+
+    <ListPreference
+        android:defaultValue="@string/pref_pic_rate_default"
+        android:dialogTitle="@string/pref_pic_rate"
+        android:entries="@array/pref_pic_rate_entries"
+        android:entryValues="@array/pref_pic_rate_values"
+        android:key="pref_picRate"
+        android:title="@string/pref_pic_rate" />
+	<EditTextPreference
+	    android:dialogTitle="@string/pref_site_name_enter"
+	    android:name="SiteNamepref"
+	    android:summary=""
+	    android:defaultValue="@string/pref_site_name_default"
+	    android:title="@string/pref_site_name"
+       	android:key="pref_siteName"
+       	android:maxLength="18"/>
+	<ListPreference 
+	    android:defaultValue="@string/pref_pic_qual_default"
+	    android:dialogTitle="@string/pref_pic_qual"
+	    android:entries="@array/pref_pic_qual_entries"
+	    android:entryValues="@array/pref_pic_qual_values"
+	    android:key="pref_picQual"
+	    android:title="@string/pref_pic_qual"/>
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout and menu -->
+    <string name="app_name">OP Security</string>
+
+    <color name="opsecurity">#212121</color>
+
+    <string name="action_settings">Settings</string>
+    <!-- Front Page Buttons -->
+    <string name="button_start">Start Security</string>
+    <string name="button_stop">Stop Security</string>
+    <string name="button_test">Test View</string>
+
+    <!-- Setting Page options -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_pic_rate">Picture Rate</string>
+    <string name="pref_pic_rate_default">* * * * *</string>
+    <string name="pref_site_name">Site Name</string>
+    <string name="pref_site_name_enter">Enter Site Name</string>
+    <string name="pref_site_name_default">Unnamed</string>
+    <string name="title_activity_user_settings">UserSettings</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="pref_pic_qual_default">42</string>
+    <string name="pref_pic_qual">Picture Quality</string>
+
+</resources>
